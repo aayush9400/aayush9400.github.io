@@ -3,47 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayush Jaiswal - Portfolio</title>
+    <title>Aayush Jaiswal</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Aayush Jaiswal</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Aayush Jaiswal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#papers">PAPERS</a></li>
+                    <li><a href="#timeline">TIMELINE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#resume">RESUME</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a Data Scientist and Machine Learning Engineer...</p>
+
+    <section id="about" class="about-section">
+        <div class="profile-picture">
+            <img src="profile.jpg" alt="Aayush Jaiswal">
+        </div>
+        <div class="about-text">
+            <h2>Aayush Jaiswal</h2>
+            <p>MS in Data Science, Software Engineer, and AI/ML Researcher</p>
+            <p>I'm currently pursuing a Master of Science in Data Science at Indiana University Bloomington, with a passion for machine learning, mental health crisis prediction, and AI/ML research.</p>
+            <p>Previously, I completed a Bachelor of Technology in Computer Science from Manipal University Jaipur. My technical expertise spans Deep Learning, Data Engineering, MLOps, Computer Vision, and Recommendation Systems.</p>
+            <h3>Education</h3>
+            <ul>
+                <li>Master of Science in Data Science, Indiana University Bloomington (2022 - 2024), GPA: 3.60</li>
+                <li>Bachelor of Technology in Computer Science, Manipal University Jaipur (2017 - 2021), GPA: 3.70</li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jaiswal-aayush"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://github.com/aayush9400"><img src="github-icon.png" alt="GitHub"></a>
+            </div>
+        </div>
     </section>
-    <section id="projects">
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, R, Java, C/C++, SQL</li>
+            <li>TensorFlow, PyTorch, Keras, Numpy, Pandas, ScikitLearn, spaCy, W&B</li>
+            <li>OpenCV, Git, Docker, Kubernetes, Grafana, Prometheus</li>
+            <li>PostgreSQL, BigQuery, Elastic Search, Kafka, Spark, dbt</li>
+            <li>Bash, Cronicle, Flask, MLFlow, AWS, GCP</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects-section">
         <h2>Projects</h2>
         <ul>
-            <li><a href="https://github.com/aayush9400/mental-health-crisis-prediction">Mental Health Crisis Prediction</a></li>
-            <li><a href="https://github.com/aayush9400/generative-ai-model">Generative AI Model</a></li>
-            <li><a href="https://github.com/aayush9400/resnet-classifier-improvement">ResNet Classifier Improvement</a></li>
+            <li>Multi-Lingual Short Video Recommendation System</li>
+            <li>Real-time Data Pipeline using DBT</li>
+            <li>3D Conditional Diffusion Model</li>
+            <li>Rapid SARS-COV-2 Detection</li>
+            <li>Virtual Coding Assistant for DiPY</li>
+            <li>Brain Image Segmentation using Vision Transformers</li>
         </ul>
     </section>
-    <section id="publications">
-        <h2>Publications</h2>
+
+    <section id="papers" class="papers-section">
+        <h2>Papers</h2>
         <ul>
-            <li><a href="#">3D Conditional Diffusion Model for Synthetic Brain Image Generation</a></li>
-            <li><a href="#">Classification of the COVID-19 Infected Patients Using DenseNet201 Based Deep Transfer Learning</a></li>
-            <li><a href="#">Rapid COVID-19 Diagnosis Using Ensemble Deep Transfer Learning Models from Chest Radiographic Images</a></li>
+            <li>3D Conditional Diffusion Model for Synthetic Brain Image Generation (2024)</li>
+            <li>Classification of the COVID-19 Infected Patients Using DenseNet201 Based Deep Transfer Learning (2020)</li>
+            <li>Rapid COVID-19 Diagnosis Using Ensemble Deep Transfer Learning Models from Chest Radiographic Images (2020)</li>
         </ul>
     </section>
-    <section id="contact">
+
+    <section id="timeline" class="timeline-section">
+        <h2>Timeline</h2>
+        <ul>
+            <li>Graduate Assistant at Indiana University Bloomington (Aug 2023 – May 2024)</li>
+            <li>Data Scientist / Machine Learning Engineer at Trell (Jan 2021 – Mar 2022)</li>
+            <li>Research Assistant at Manipal University Jaipur (Jan 2020 – Jul 2020)</li>
+            <li>Data Science Intern at Airtel (Jun 2019 – Jul 2019)</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-section">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:aajais@iu.edu">aajais@iu.edu</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/jaiswal-aayush">linkedin.com/in/jaiswal-aayush</a></p>
     </section>
+
     <footer>
         <p>&copy; 2024 Aayush Jaiswal</p>
     </footer>
