@@ -23,9 +23,9 @@
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#papers">Papers</a></li>
-                        <li><a href="#timeline">Timeline</a></li>
                         <!-- <li><a href="#contact">Contact</a></li> -->
                         <li><a href="#resume">Resume</a></li>
                         <li>
@@ -183,9 +183,6 @@
                                 <i class="devicon-opencv-plain"></i> OpenCV
                             </span>
                             <span class="skill-badge">
-                                <i class="devicon-scikit-learn-plain"></i> Scikit-Learn
-                            </span>
-                            <span class="skill-badge">
                                 <i class="devicon-pandas-plain"></i> Pandas
                             </span>
                             <span class="skill-badge">
@@ -227,12 +224,6 @@
                             </span>
                             <span class="skill-badge">
                                 <i class="devicon-grafana-plain"></i> Grafana
-                            </span>
-                            <span class="skill-badge">
-                                <i class="devicon-mlflow-plain"></i> MLflow
-                            </span>
-                            <span class="skill-badge">
-                                <i class="devicon-babel-plain"></i> W&B
                             </span>
                         </div>
                     </div>
@@ -289,66 +280,81 @@
             </div>
         </section>
 
-        <section id="timeline" class="timeline-section"></section>
+        <section id="timeline" class="timeline-section">
             <div class="container">
                 <h2>Professional Journey</h2>
                 <div class="timeline">
                     <!-- Current Position -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
                         <div class="timeline-content">
                             <div class="timeline-date">Oct 2024 - Present</div>
                             <h3>Machine Learning Engineer</h3>
-                            <h4><i class="fas fa-building"></i> Weights & Biases</h4>
-                            <p>Working on MLOps infrastructure and experiment tracking systems to help data scientists and ML engineers build better models faster.</p>
-                            <div class="timeline-tags">
-                                <span>MLOps</span>
-                                <span>PyTorch</span>
-                                <span>TensorFlow</span>
-                            </div>
+                            <h4>Weights & Biases</h4>
+                            <p>Working on MLOps infrastructure, enabling efficient model tracking and deployment for data scientists and ML engineers.</p>
+                            <div class="timeline-tags"><span>MLOps</span><span>PyTorch</span><span>TensorFlow</span></div>
                         </div>
                     </div>
-
-                    <!-- Research Position -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot">
-                            <i class="fas fa-microscope"></i>
-                        </div>
+        
+                    <!-- Previous Positions -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"><i class="fas fa-microscope"></i></div>
                         <div class="timeline-content">
                             <div class="timeline-date">Aug 2023 - Oct 2024</div>
                             <h3>AI Researcher</h3>
-                            <h4><i class="fas fa-university"></i> Indiana University Bloomington</h4>
-                            <p>Conducted research in computer vision and deep learning, focusing on medical image analysis and 3D reconstruction.</p>
-                            <div class="timeline-tags">
-                                <span>Deep Learning</span>
-                                <span>Computer Vision</span>
-                                <span>Research</span>
-                            </div>
+                            <h4>Indiana University Bloomington</h4>
+                            <p>Developed a 3D diffusion model and advanced neural networks for medical image generation and analysis.</p>
+                            <div class="timeline-tags"><span>Deep Learning</span><span>3D Diffusion</span><span>TensorFlow</span></div>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"><i class="fas fa-code"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jan 2021 - Jun 2022</div>
+                            <h3>Machine Learning Engineer</h3>
+                            <h4>Trell</h4>
+                            <p>Developed a video recommendation system for multilingual content, improving user retention by 45%.</p>
+                            <div class="timeline-tags"><span>Recommendation Systems</span><span>Data Pipelines</span><span>AWS</span></div>
                         </div>
                     </div>
 
-                    <!-- Previous Position -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot">
-                            <i class="fas fa-code"></i>
-                        </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"><i class="fas fa-code-branch"></i></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">Jan 2021 - Mar 2022</div>
-                            <h3>Machine Learning Engineer</h3>
-                            <h4><i class="fas fa-building"></i> Trell</h4>
-                            <p>Developed and deployed recommendation systems and content analysis pipelines for a social media platform.</p>
-                            <div class="timeline-tags">
-                                <span>Recommendation Systems</span>
-                                <span>AWS</span>
-                                <span>Python</span>
-                            </div>
+                            <div class="timeline-date">July 2020 - Sep 2020</div>
+                            <h3>Deep Learning Engineer</h3>
+                            <h4>Spotle.ai</h4>
+                            <p>Developed CNN-based image classification models for real-world applications.</p>
+                            <div class="timeline-tags"><span>Deep Learning</span><span>CNN</span></div>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"><i class="fas fa-database"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">May 2019 - Aug 2019</div>
+                            <h3>Data Scientist</h3>
+                            <h4>Airtel</h4>
+                            <p>Analyzed customer trends for 10M+ users, boosting sales by 10% through effective clustering algorithms.</p>
+                            <div class="timeline-tags"><span>Data Analysis</span><span>Hadoop</span><span>Spark</span></div>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"><i class="fas fa-bullhorn"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Aug 2017 - Jan 2018</div>
+                            <h3>Marketing Intern</h3>
+                            <h4>The Climber</h4>
+                            <p>Implemented various marketing strategies, increasing sales and revenue by 30%.</p>
+                            <div class="timeline-tags"><span>Marketing</span><span>Strategy</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <section id="projects" class="projects-section">
             <div class="container">
