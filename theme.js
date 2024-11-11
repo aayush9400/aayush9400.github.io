@@ -21,3 +21,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Here you would typically handle the form submission
+    // For example, sending the data to a server or email service
+    
+    // Show success message
+    alert('Thank you for your message! I will get back to you soon.');
+    this.reset();
+});
