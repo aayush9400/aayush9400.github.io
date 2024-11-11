@@ -1,0 +1,199 @@
+:root {
+    /* Light theme - Refined modern palette */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f7fa;
+    --text-primary: #2c3e50;
+    --text-secondary: #5d7184;
+    --accent: #3498db;
+    --accent-hover: #2980b9;
+    --border: #e9ecef;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --header-height: 4rem;
+}
+
+[data-theme="dark"] {
+    /* Dark theme - Softer contrasts for better readability */
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #ecf0f1;
+    --text-secondary: #a0aec0;
+    --accent: #60a5fa;
+    --accent-hover: #3b82f6;
+    --border: #2d3748;
+    --card-bg: #1e1e1e;
+    --shadow: rgba(0, 0, 0, 0.25);
+}
+
+/* Refined Typography */
+body {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    transition: all 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Improved heading hierarchy */
+h1 { 
+    font-size: 3rem; 
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 { 
+    font-size: 2.25rem; 
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+h3 { 
+    font-size: 1.875rem; 
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+h4 { 
+    font-size: 1.5rem; 
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Refined Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+#themeToggle {
+    background: var(--bg-secondary);
+    border: 1.5px solid var(--border);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+#themeToggle:hover {
+    transform: scale(1.05);
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+#themeToggle:hover i {
+    color: white;
+}
+
+#themeToggle i {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Enhanced Card Styles */
+.project-card, .paper-card, .education-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px var(--shadow);
+}
+
+.project-card:hover, .paper-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px var(--shadow);
+    border-color: var(--accent);
+}
+
+/* Refined Section Spacing */
+section {
+    padding: 6rem 0;
+    margin: 2rem 0;
+}
+
+section:first-of-type {
+    padding-top: calc(var(--header-height) + 2rem);
+}
+
+/* Container Improvements */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Enhanced Skill Badges */
+.skill-badge {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 0.75rem 1.25rem;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border);
+}
+
+.skill-badge:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+/* Text Content Improvements */
+p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Link Styles */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* Card Content Spacing */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.25rem; }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    section {
+        padding: 4rem 0;
+    }
+    
+    .project-card, .paper-card, .education-card {
+        padding: 1.5rem;
+    }
+}

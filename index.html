@@ -3,102 +3,584 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI/ML Engineer with expertise in deep learning, computer vision, and scalable cloud architectures.">
     <title>Aayush Jaiswal</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="theme.css">
+
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>Aayush Jaiswal</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#papers">PAPERS</a></li>
-                    <li><a href="#timeline">TIMELINE</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#resume">RESUME</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="header-content">
+                <h1><a href="#home" aria-label="Home">AJ</a></h1>
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#papers">Papers</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li>
+                            <label class="theme-switch" for="themeToggle">
+                                <input type="checkbox" id="themeToggle" aria-label="Toggle theme">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+                    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="about-section">
-        <div class="profile-picture">
-            <img src="profile.jpeg" alt="Aayush Jaiswal">
-        </div>
-        <div class="about-text">
-            <h2>Aayush Jaiswal</h2>
-            <p>MS in Data Science, Software Engineer, and AI/ML Researcher</p>
-            <p>I'm currently pursuing a Master of Science in Data Science at Indiana University Bloomington, with a passion for machine learning, mental health crisis prediction, and AI/ML research.</p>
-            <p>Previously, I completed a Bachelor of Technology in Computer Science from Manipal University Jaipur. My technical expertise spans Deep Learning, Data Engineering, MLOps, Computer Vision, and Recommendation Systems.</p>
-            <h3>Education</h3>
-            <ul>
-                <li>Master of Science in Data Science, Indiana University Bloomington (2022 - 2024), GPA: 3.60</li>
-                <li>Bachelor of Technology in Computer Science, Manipal University Jaipur (2017 - 2021), GPA: 3.70</li>
-            </ul>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/jaiswal-aayush"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                <a href="https://github.com/aayush9400"><img src="github-icon.png" alt="GitHub"></a>
+    <main id="home">
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Left Column: Profile Picture and Social Links -->
+                    <div class="profile-section">
+                        <div class="profile-picture">
+                            <div class="profile-frame">
+                                <img src="images/profile.jpeg" alt="Portrait of Aayush Jaiswal" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/jaiswal-aayush" class="social-link" rel="noopener">
+                                <img src="images/linkedin-icon.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/aayush9400" class="social-link" rel="noopener">
+                                <img src="images/github-icon.png" alt="GitHub">
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=ZvTNhlcAAAAJ&hl=en" class="social-link" title="Google Scholar">
+                                <img src="images/google-scholar-icon.png" alt="Google Scholar">
+                            </a>
+                            <a href="https://medium.com/@jaayush12" class="social-link" title="Medium">
+                                <img src="images/medium-icon.png" alt="Medium">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Bio, Education, and Tags -->
+                    <div class="about-content">
+                        <div class="about-header">
+                            <h2>Aayush Jaiswal</h2>
+                            <span class="title-badge">AI/ML Engineer</span>
+                        </div>
+
+                        <div class="about-description">
+                            <p class="lead">Specializing in deep learning, computer vision, and scalable cloud architectures.</p>
+                            <p>I'm passionate about advancing AI technologies and implementing ethical AI practices in various industries.</p>
+                        </div>
+
+                        <div class="education-section">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <div class="education-cards">
+                                <div class="education-card">
+                                    <div class="education-details">
+                                        <h4>High School</h4>
+                                        <p class="school">Delhi Public School, Vasant Kunj</p>
+                                        <p class="period">2017</p>
+                                        <div class="gpa">92%</div>
+                                    </div>
+                                </div>
+                                <div class="education-card">
+                                    <div class="education-details">
+                                        <h4>Bachelor of Technology in Computer Science</h4>
+                                        <p class="school">Manipal University Jaipur</p>
+                                        <p class="period">2017 - 2021</p>
+                                        <div class="gpa">GPA: 3.70</div>
+                                    </div>
+                                </div>
+                                <div class="education-card">
+                                    <div class="education-details">
+                                        <h4>Master of Science in Data Science</h4>
+                                        <p class="school">Indiana University Bloomington</p>
+                                        <p class="period">2022 - 2024</p>
+                                        <div class="gpa">GPA: 3.60</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span>Open Source Contributor</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Published Researcher</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>ML Systems Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, R, Java, C/C++, SQL</li>
-            <li>TensorFlow, PyTorch, Keras, Numpy, Pandas, ScikitLearn, spaCy, W&B</li>
-            <li>OpenCV, Git, Docker, Kubernetes, Grafana, Prometheus</li>
-            <li>PostgreSQL, BigQuery, Elastic Search, Kafka, Spark, dbt</li>
-            <li>Bash, Cronicle, Flask, MLFlow, AWS, GCP</li>
-        </ul>
-    </section>
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">
+                                <i class="fab fa-python"></i> Python
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-js-square"></i> JavaScript
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-r-plain"></i> R
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fas fa-database"></i> SQL
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-cplusplus-plain"></i> C/C++
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-dart-plain"></i> Dart
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-java"></i> Java
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-go-plain"></i> Go
+                            </span>
+                        </div>
+                    </div>
+        
+                    <!-- AI/ML Frameworks -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> AI Frameworks</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">
+                                <i class="devicon-tensorflow-original"></i> TensorFlow
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-pytorch-original"></i> PyTorch
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-keras-plain"></i> Keras
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-opencv-plain"></i> OpenCV
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-scikit-learn-plain"></i> Scikit-Learn
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-pandas-plain"></i> Pandas
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-numpy-plain"></i> NumPy
+                            </span>
+                        </div>
+                    </div>
+        
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">
+                                <i class="fab fa-aws"></i> AWS
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-google"></i> Google Cloud
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-microsoft"></i> Azure
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-docker"></i> Docker
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-kubernetes-plain"></i> Kubernetes
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-ubuntu-plain"></i> Linux
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-git-alt"></i> Git
+                            </span>
+                            <span class="skill-badge">
+                                <i class="fab fa-jenkins"></i> Jenkins
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-prometheus-plain"></i> Prometheus
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-grafana-plain"></i> Grafana
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-mlflow-plain"></i> MLflow
+                            </span>
+                            <span class="skill-badge">
+                                <i class="devicon-babel-plain"></i> W&B
+                            </span>
+                        </div>
+                    </div>
+        
+                    <!-- Specialties -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-star"></i> Specialties</h3>
+                        <div class="specialty-cards">
+                            <!-- Deep Learning -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">🤖</div>
+                                <h4>Deep Learning</h4>
+                                <p>Expert in neural networks and model architecture design.</p>
+                            </div>
+                            <!-- NLP -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">🗣️</div>
+                                <h4>NLP</h4>
+                                <p>Proficient in natural language processing and understanding.</p>
+                            </div>
+                            <!-- Generative AI -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">🎨</div>
+                                <h4>Generative AI</h4>
+                                <p>Experience in building generative models like GANs and VAEs.</p>
+                            </div>
+                            <!-- MLOps -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">🔧</div>
+                                <h4>MLOps</h4>
+                                <p>Skilled in deploying and managing ML models in production.</p>
+                            </div>
+                            <!-- Computer Vision -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">👁️</div>
+                                <h4>Computer Vision</h4>
+                                <p>Specialized in image processing and visual recognition.</p>
+                            </div>
+                            <!-- Data Analysis -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">📊</div>
+                                <h4>Data Analysis</h4>
+                                <p>Expertise in data preprocessing and exploratory data analysis.</p>
+                            </div>
+                            <!-- Web Development -->
+                            <div class="specialty-card">
+                                <div class="specialty-icon">🌐</div>
+                                <h4>Web Development</h4>
+                                <p>Experience in developing full-stack web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <ul>
-            <li>Multi-Lingual Short Video Recommendation System</li>
-            <li>Real-time Data Pipeline using DBT</li>
-            <li>3D Conditional Diffusion Model</li>
-            <li>Rapid SARS-COV-2 Detection</li>
-            <li>Virtual Coding Assistant for DiPY</li>
-            <li>Brain Image Segmentation using Vision Transformers</li>
-        </ul>
-    </section>
+        <section id="timeline" class="timeline-section"></section>
+            <div class="container">
+                <h2>Professional Journey</h2>
+                <div class="timeline">
+                    <!-- Current Position -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Oct 2024 - Present</div>
+                            <h3>Machine Learning Engineer</h3>
+                            <h4><i class="fas fa-building"></i> Weights & Biases</h4>
+                            <p>Working on MLOps infrastructure and experiment tracking systems to help data scientists and ML engineers build better models faster.</p>
+                            <div class="timeline-tags">
+                                <span>MLOps</span>
+                                <span>PyTorch</span>
+                                <span>TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="papers" class="papers-section">
-        <h2>Papers</h2>
-        <ul>
-            <li>3D Conditional Diffusion Model for Synthetic Brain Image Generation (2024)</li>
-            <li>Classification of the COVID-19 Infected Patients Using DenseNet201 Based Deep Transfer Learning (2020)</li>
-            <li>Rapid COVID-19 Diagnosis Using Ensemble Deep Transfer Learning Models from Chest Radiographic Images (2020)</li>
-        </ul>
-    </section>
+                    <!-- Research Position -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Aug 2023 - Oct 2024</div>
+                            <h3>AI Researcher</h3>
+                            <h4><i class="fas fa-university"></i> Indiana University Bloomington</h4>
+                            <p>Conducted research in computer vision and deep learning, focusing on medical image analysis and 3D reconstruction.</p>
+                            <div class="timeline-tags">
+                                <span>Deep Learning</span>
+                                <span>Computer Vision</span>
+                                <span>Research</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <section id="timeline" class="timeline-section">
-        <h2>Timeline</h2>
-        <ul>
-            <li>Graduate Assistant at Indiana University Bloomington (Aug 2023 – May 2024)</li>
-            <li>Data Scientist / Machine Learning Engineer at Trell (Jan 2021 – Mar 2022)</li>
-            <li>Research Assistant at Manipal University Jaipur (Jan 2020 – Jul 2020)</li>
-            <li>Data Science Intern at Airtel (Jun 2019 – Jul 2019)</li>
-        </ul>
-    </section>
+                    <!-- Previous Position -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Jan 2021 - Mar 2022</div>
+                            <h3>Machine Learning Engineer</h3>
+                            <h4><i class="fas fa-building"></i> Trell</h4>
+                            <p>Developed and deployed recommendation systems and content analysis pipelines for a social media platform.</p>
+                            <div class="timeline-tags">
+                                <span>Recommendation Systems</span>
+                                <span>AWS</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:aajais@iu.edu">aajais@iu.edu</a></p>
-    </section>
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>3D Conditional Diffusion Model</h3>
+                        <p>Created a novel 2-channel VQ-VAE model for brain MRI image generation using advanced diffusion techniques.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>HPC</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Multi-Lingual Short Video Recommendation System</h3>
+                        <p>Developed a scalable AI system, improving content personalization by 45% with real-time user behavior adaptation.</p>
+                        <div class="tech-stack">
+                            <span>TensorFlow</span><span>AWS</span><span>Docker</span><span>MLflow</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Meal Planner AI Agent</h3>
+                        <p>Built a smart kitchen assistant optimizing meal planning using OpenAI models and a full-stack web app deployment.</p>
+                        <div class="tech-stack">
+                            <span>Flutter</span><span>FastAPI</span><span>Firebase</span><span>Docker</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Rapid SARS-COV-2 Detection</h3>
+                        <p>Achieved 96% accuracy in COVID-19 detection from X-ray and CT scans using deep learning models.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>AWS</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Real-time Data Pipeline using DBT</h3>
+                        <p>Enhanced analytics efficiency by 15% through real-time data pipelines, leveraging DBT and BigQuery.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>SQL</span><span>DBT</span><span>GCP</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>3D Image Segmentation with Vision Transformers</h3>
+                        <p>Developed a neural network with attention mechanisms, achieving 95% accuracy in identifying tumor regions in MRI scans.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>PyTorch</span><span>Hugging Face</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Monitoring Cloud-Native Environments</h3>
+                        <p>Implemented scalable monitoring pipelines with Prometheus and Grafana, improving system performance insights by 30%.</p>
+                        <div class="tech-stack">
+                            <span>AWS</span><span>Prometheus</span><span>Grafana</span><span>Kubernetes</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="papers" class="papers-section">
+            <div class="container">
+                <h2>Research Publications</h2>
+                <div class="papers-grid">
+                    <!-- Paper Card 1 -->
+                    <article class="paper-card">
+                        <div class="paper-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="paper-content">
+                            <h3>Classification of COVID-19 using DenseNet201</h3>
+                            <p class="paper-meta">
+                                <span><i class="far fa-calendar-alt"></i> 2020</span>
+                                <span><i class="fas fa-quote-left"></i> 15 citations</span>
+                            </p>
+                            <p class="paper-abstract">Novel deep learning approach for COVID-19 classification using transfer learning and DenseNet201 architecture.</p>
+                            <div class="paper-links">
+                                <a href="#" class="paper-link"><i class="fas fa-external-link-alt"></i> View Paper</a>
+                                <a href="#" class="paper-link"><i class="fas fa-code"></i> Code</a>
+                                <a href="#" class="paper-link"><i class="fas fa-quote-right"></i> Cite</a>
+                            </div>
+                        </div>
+                    </article>
 
-    <section id="resume" class="resume-section">
-        <h2>Resume</h2>
-        <iframe src="AAYUSH_JAISWAL_RESUME.pdf" width="100%" height="600px"></iframe>
-    </section>
+                    <!-- Paper Card 2 -->
+                    <article class="paper-card">
+                        <div class="paper-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="paper-content">
+                            <h3>Rapid COVID-19 Diagnosis Using Ensemble Models</h3>
+                            <p class="paper-meta">
+                                <span><i class="far fa-calendar-alt"></i> 2020</span>
+                                <span><i class="fas fa-quote-left"></i> 12 citations</span>
+                            </p>
+                            <p class="paper-abstract">Ensemble learning approach combining multiple deep learning models for accurate COVID-19 diagnosis.</p>
+                            <div class="paper-links">
+                                <a href="#" class="paper-link"><i class="fas fa-external-link-alt"></i> View Paper</a>
+                                <a href="#" class="paper-link"><i class="fas fa-code"></i> Code</a>
+                                <a href="#" class="paper-link"><i class="fas fa-quote-right"></i> Cite</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:aajais@iu.edu">aajais@iu.edu</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/jaiswal-aayush" target="_blank">Connect with me</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/aayush9400" target="_blank">View my projects</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <form id="contactForm" action="#" method="POST" novalidate>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your email">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Message subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2>Resume</h2>
+                <div class="resume-container">
+                    <!-- Resume Preview -->
+                    <div class="resume-preview">
+                        <iframe 
+                            src="AAYUSH_JAISWAL_RESUME.pdf" 
+                            title="Resume of Aayush Jaiswal"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <!-- Resume Actions -->
+                    <div class="resume-actions">
+                        <div class="resume-info">
+                            <h3>My Professional Resume</h3>
+                            <p>Last updated: January 2024</p>
+                            <div class="resume-stats">
+                                <span><i class="fas fa-file-pdf"></i> PDF Format</span>
+                                <span><i class="fas fa-file-alt"></i> 2 Pages</span>
+                            </div>
+                        </div>
+                        
+                        <div class="download-options">
+                            <h4>Download Options</h4>
+                            <div class="download-buttons">
+                                <a href="AAYUSH_JAISWAL_RESUME.pdf" download class="download-btn primary">
+                                    <i class="fas fa-download"></i>
+                                    Download PDF
+                                </a>
+                                <a href="AAYUSH_JAISWAL_RESUME.docx" download class="download-btn secondary">
+                                    <i class="fas fa-file-word"></i>
+                                    Download Word
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="additional-links">
+                            <a href="https://www.linkedin.com/in/jaiswal-aayush" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                View LinkedIn Profile
+                            </a>
+                            <a href="mailto:aajais@iu.edu">
+                                <i class="fas fa-envelope"></i>
+                                Request Updated Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Aayush Jaiswal</p>
+        <div class="container">
+            <p>&copy; 2024 Aayush Jaiswal</p>
+        </div>
     </footer>
+
+    <script src="theme.js"></script>
 </body>
 </html>
